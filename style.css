@@ -1,0 +1,74 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #e79fcc;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0 20px 20px 20px;
+    flex-shrink: 0;
+}
+
+label {
+    width: 120px;
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    border: 3px solid rgb(206, 42, 165);
+    margin-bottom: 10px;
+}
+
+#tableContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    overflow: auto;
+    width: calc(100% - 40px);
+    max-height: calc(100% - 60px);
+}
+
+#multiplicationTable {
+    border-collapse: collapse;
+    width: max-content;
+    margin: auto;
+    border: 3px solid rgb(134, 37, 97);
+}
+
+#multiplicationTable th, #multiplicationTable td {
+    font-size: 12px;
+    height: 30px;
+    min-height: 30px;
+    width: 30px;
+    min-width: 30px;
+    padding: 0px;
+    border: 2px solid rgb(143, 65, 113);
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+#multiplicationTable th:first-child, #multiplicationTable td:first-child, #multiplicationTable tr:first-child {
+    position: sticky;
+    top: 0;
+    background-color: #e46891;
+    color: #FFFFFF;
+}
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Dynamic Multiplication Table</title>
+</head>
+<body>
+    <h1>Dynamic Multiplication Table</h1>
+    <form id="inputForm">
+        <label for="startMultiplier">Starting Multiplier:</label>
+        <input type="number" id="startMultiplier" min="-50" max="50" required>
+        <label for="endMultiplier">Ending Multiplier:</label>
+        <input type="number" id="endMultiplier" min="-50" max="50" required>
+        <label for="startMultiplicand">Starting Multiplicand:</label>
+        <input type="number" id="startMultiplicand" min="-50" max="50" required>
+        <label for="endMultiplicand">Ending Multiplicand:</label>
+        <input type="number" id="endMultiplicand" min="-50" max="50" required>
+        <button type="submit">Generate Table</button>
+    </form>
+    <div id="tableContainer">
+        <table id="multiplicationTable"></table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
