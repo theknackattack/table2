@@ -1,27 +1,65 @@
+<!-- 
+    Jonathan Kang
+    Wenjin Zhou
+    COMP4610
+    Homework 4
+
+    This is the skeleton website of the HTML file that includes the basic structures for the following:
+        - Sliders
+        - Form
+        - JQuery
+        - Errors
+        - Table Container
+        - Submission
+        
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <title>Dynamic Multiplication Table</title>
 </head>
 <body>
     <h1>Dynamic Multiplication Table</h1>
     <form id="inputForm">
-        <label for="startMultiplier">Starting Multiplier:</label>
-        <input type="number" id="startMultiplier" min="-50" max="50" required>
-        <label for="endMultiplier">Ending Multiplier:</label>
-        <input type="number" id="endMultiplier" min="-50" max="50" required>
-        <label for="startMultiplicand">Starting Multiplicand:</label>
-        <input type="number" id="startMultiplicand" min="-50" max="50" required>
-        <label for="endMultiplicand">Ending Multiplicand:</label>
-        <input type="number" id="endMultiplicand" min="-50" max="50" required>
+        <div class="input-group">
+            <label for="startMultiplier">Starting Multiplier:</label>
+            <input type="number" id="startMultiplier" required>
+            <div id="startMultiplierSlider"></div>
+            <span class="error" id="startMultiplierError"></span>
+        </div>
+        
+        <div class="input-group">
+            <label for="endMultiplier">Ending Multiplier:</label>
+            <input type="number" id="endMultiplier" required>
+            <div id="endMultiplierSlider"></div>
+            <span class="error" id="endMultiplierError"></span>
+        </div>
+        
+        <div class="input-group">
+            <label for="startMultiplicand">Starting Multiplicand:</label>
+            <input type="number" id="startMultiplicand" required>
+            <div id="startMultiplicandSlider"></div>
+            <span class="error" id="startMultiplicandError"></span>
+        </div>
+        
+        <div class="input-group">
+            <label for="endMultiplicand">Ending Multiplicand:</label>
+            <input type="number" id="endMultiplicand" required>
+            <div id="endMultiplicandSlider"></div>
+            <span class="error" id="endMultiplicandError"></span>
+        </div>
+        
         <button type="submit">Generate Table</button>
     </form>
     <div id="tableContainer">
         <table id="multiplicationTable"></table>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>

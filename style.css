@@ -18,8 +18,15 @@ form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 0 20px 20px 20px;
+    margin: 0 20px 20px 20px;
     flex-shrink: 0;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
 }
 
 label {
@@ -32,6 +39,19 @@ input[type="number"] {
     padding: 5px;
     border: 3px solid rgb(206, 42, 165);
     margin-bottom: 10px;
+}
+
+#startMultiplierSlider,
+#endMultiplierSlider,
+#startMultiplicandSlider,
+#endMultiplicandSlider {
+    margin: 10px 0;
+    width: 200px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
 }
 
 #tableContainer {
@@ -71,4 +91,3 @@ input[type="number"] {
     background-color: #e46891;
     color: #FFFFFF;
 }
-
